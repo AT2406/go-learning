@@ -3,5 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello world!")
+	sum := 0
+	for i := 0; i < 100000000; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
 }
